@@ -1,52 +1,69 @@
 
 body {
-    font-family: Arial, sans-serif;
+    font-family:  'Georgia', serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f8f9;
-    color: #333;
+    
+    background-color: #f4f1e6; /* sanftes Beige */
+    color: #5b4636;
+
 }
 header {
-    background-color: #4a7c59;
-    color: white;
+    
+background-color: #8b5e3c; /* warmes Braun */
+    color: #fff8e7; /* helles Pergamentweiß */
     text-align: center;
-    padding: 1rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
 }
+
+
 nav {
     display: flex;
     justify-content: center;
-    background-color: #6fa584;
+    background-color: #c19a6b; /* beige-braun */
     flex-wrap: wrap;
 }
 nav a {
-    color: white;
+    color: #fff8e7;
     text-decoration: none;
-    padding: 1rem;
-    display: block;
+    padding: 1rem 1.5rem;
+    font-weight: bold;
+    transition: background 0.3s ease;
 }
 nav a:hover {
-    background-color: #4a7c59;
+    background-color: #8b5e3c;
 }
+
+
+h2 {
+    text-align: center;
+}
+
+
+/* Hauptbereich mit Pergament-Stil */
 main {
     max-width: 900px;
     margin: 2rem auto;
-    padding: 1rem;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 4rem;
+    background: #fdf6e3 url('bilder/pergament.jpg') repeat; /* Pergament-Hintergrund */
+    font-family: 'Georgia', serif;
+    color: #5b4636;
+    border: 1px solid #d2b48c; /* feiner Rahmen */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    font-size: 18px;
+    line-height: 2.0;
 }
 img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
     margin-top: 1rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
-iframe {
-    width: 100%;
-    height: 500px;
-    border: none;
-    margin-bottom: 1rem;
-}
+
 .angebot, .links-container, .einfuehrung {
     display: flex;
     flex-wrap: wrap;
@@ -56,11 +73,12 @@ iframe {
 .angebot-item, .link-item, .einfuehrung-item {
     width: 280px;
     text-align: center;
-    border: 1px solid #ddd;
+    border: 1px solid #d2b48c;
     border-radius: 8px;
     padding: 1rem;
-    background-color: #fafafa;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    background-color: #fff8e7;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+
 }
 .angebot-item img, .link-item img, .einfuehrung-item  img {
     width: 100%;
@@ -69,17 +87,29 @@ iframe {
     margin-bottom: 0.5rem;
 }
 .angebot-item a, .link-item a, .einfuehrung-item a {
-    color: #4a7c59;
+    color: #8b5e3c;
     font-weight: bold;
     text-decoration: none;
 }
 .angebot-item a:hover, .link-item a:hover, .einfuehrung-item a:hover {
     text-decoration: underline;
 }
+
+.extra-abstand {
+    margin-bottom: 6rem; /* zusätzlicher Abstand nur unter diesem Absatz */
+}
+
+.weniger-abstand {
+    margin-bottom: 6px;
+}
+
+
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #6fa584;
-    color: white;
+    background-color: #8b5e3c;
+    color: #fff8e7;
     margin-top: 2rem;
+    font-size: 0.9rem;
 }
+
