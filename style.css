@@ -1,0 +1,85 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f8f9;
+    color: #333;
+}
+header {
+    background-color: #4a7c59;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #6fa584;
+    flex-wrap: wrap;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+}
+nav a:hover {
+    background-color: #4a7c59;
+}
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+    margin-bottom: 1rem;
+}
+.angebot, .links-container, .einfuehrung {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+.angebot-item, .link-item, .einfuehrung-item {
+    width: 280px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: #fafafa;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.angebot-item img, .link-item img, .einfuehrung-item  img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+}
+.angebot-item a, .link-item a, .einfuehrung-item a {
+    color: #4a7c59;
+    font-weight: bold;
+    text-decoration: none;
+}
+.angebot-item a:hover, .link-item a:hover, .einfuehrung-item a:hover {
+    text-decoration: underline;
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #6fa584;
+    color: white;
+    margin-top: 2rem;
+}
