@@ -10,7 +10,7 @@ body {
 }
 header {
     
-background-color: #8b5e3c; /* warmes Braun */
+    background-color: #8b5e3c; /* warmes Braun */
     color: #fff8e7; /* helles Pergamentweiß */
     text-align: center;
     padding: 1.5rem;
@@ -28,7 +28,7 @@ background-color: #8b5e3c; /* warmes Braun */
     width: 100%;
     position: sticky;
     top: 0;
-    background: transparent;
+    background-color: #fff8e7;
     box-shadow: 0 10px 20px rgba(0,0,0,0.5);
     backdrop-filter: blur(10px);
     z-index: 999;
@@ -152,7 +152,7 @@ h2 {
 
 /* Hauptbereich mit Pergament-Stil */
 main {
-    max-width: 900px;
+    max-width: 700px;
     margin: 2rem auto;
     padding: 4rem;
     background: #fdf6e3 url('bilder/pergament.jpg') repeat; /* Pergament-Hintergrund */
@@ -176,10 +176,14 @@ img {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
 }
+
+
 .angebot-item, .link-item, .einfuehrung-item {
     width: 280px;
+    min-height: 480px;
     text-align: center;
     border: 1px solid #d2b48c;
     border-radius: 8px;
@@ -194,14 +198,24 @@ img {
     border-radius: 6px;
     margin-bottom: 0.5rem;
 }
-.angebot-item a, .link-item a, .einfuehrung-item a {
+.angebot-item p, .link-item p, .einfuehrung-item p {
     color: #8b5e3c;
     font-weight: bold;
     text-decoration: none;
 }
-.angebot-item a:hover, .link-item a:hover, .einfuehrung-item a:hover {
-    text-decoration: underline;
+.angebot-item:hover, .link-item:hover, .einfuehrung-item:hover {
+    transition: all 0.3 ease;
+    box-shadow: 5px 5px 5px #8b5e3c;
+    transition: all 0.3s ease;
+    
 }
+
+.link {
+   text-decoration: none;
+    color: inherit;
+    display: block; 
+}
+
 
 .extra-abstand {
     margin-bottom: 6rem; /* zusätzlicher Abstand nur unter diesem Absatz */
@@ -213,11 +227,16 @@ img {
 
 
 footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     text-align: center;
     padding: 1rem;
     background-color: #8b5e3c;
     color: #fff8e7;
     margin-top: 2rem;
     font-size: 0.9rem;
+
 }
 
