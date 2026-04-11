@@ -6,3 +6,15 @@ navbarToggle.addEventListener('click', () => {
     navbarToggle.classList.toggle('active');
     navbarMenu.classList.toggle('active');
 });
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js')
+      .then(registration => {
+        console.log('ServiceWorker registriert:', registration.scope);
+      })
+      .catch(error => {
+        console.log('ServiceWorker-Registrierung fehlgeschlagen:', error);
+      });
+  });
+}
