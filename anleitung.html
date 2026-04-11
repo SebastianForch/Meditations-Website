@@ -11,13 +11,26 @@
 <header>
     
 </header>
-<nav>
-    <a href="index.html">Startseite</a>
-    <a href="anleitung.html">Anleitung</a>
-    <a href="hintergruende.html">Hintergründe</a>
-    <a href="meditationsangebot.html">Meditationsangebot</a>
-    <a href="links.html">Links</a>
+<nav class="navbar">
+    <div class="navbar-container">
+        
+       <a href="index.html" class="navbar-logo">Meditation</a>
+
+        <button class="navbar-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <ul class="navbar-menu">
+            <li><a href="anleitung.html">Anleitung</a></li>
+            <li><a href="hintergruende.html">Hintergründe</a></li>
+            <li><a href="meditationsangebot.html">Meditationsangebot</a></li>
+            <li><a href="links.html">Links</a></li>
+        </ul>
+    </div>
 </nav>
+<script src="script.js"></script>
+
 <main>
 <h2>Anleitung</h2>
     <p> Diese Meditation ist ein Innehalten in unserem Alltag, der vielleicht stressig, sorgenvoll oder wild und unruhig ist. Körperliche Zustände, angenehme und unangenehme Erfahrungen, Gemütszustände (Nervosität, Angst, abgelenkt 	sein,...) und geistige Konzepte ("Ich muss ganz viel leisten." "Ich bin immer so müde." "Ich bekomme das nicht hin." ... ) können uns verwirren und uns von uns selbst ablenken. Durch die Meditation können wir Distanz zu diesen 	gewinnen und erkennen, wer wir wirklich sind.
@@ -36,6 +49,14 @@
      <img src="bilder/Meditation-Positionen.png" alt="Meditationspositionen">
 
 </main>
-<footer>&copy; 2026 Meditation</footer>
+<footer> 
+    <div class="footer-content">
+         <img src="bilder/Lotus_Logo.jpg" alt="Logo" class="logo">
+        <div class="footer-links">
+            <a href="anleitung.html" class="footer-link">[nach oben]</a>
+            <a href="hintergruende.html" class="footer-link">[Hintergründe &rarr;]</a>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

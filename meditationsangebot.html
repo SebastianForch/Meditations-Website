@@ -11,35 +11,66 @@
 <header>
     
 </header>
-<nav>
-    <a href="index.html">Startseite</a>
-    <a href="anleitung.html">Anleitung</a>
-    <a href="hintergruende.html">Hintergründe</a>
-    <a href="meditationsangebot.html">Meditationsangebot</a>
-    <a href="links.html">Links</a>
+<nav class="navbar">
+    <div class="navbar-container">
+        
+       <a href="index.html" class="navbar-logo">Meditation</a>
+
+        <button class="navbar-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <ul class="navbar-menu">
+            <li><a href="anleitung.html">Anleitung</a></li>
+            <li><a href="hintergruende.html">Hintergründe</a></li>
+            <li><a href="meditationsangebot.html">Meditationsangebot</a></li>
+            <li><a href="links.html">Links</a></li>
+        </ul>
+    </div>
 </nav>
+<script src="script.js"></script>
+
 <main>
-    <h2>Externe Angebote</h2>
+    <h2>Externe Meditationsangebote</h2>
     <div class="angebot">
+        <a href="https://www.vipassana-karlsruhe.info/Willkommen/" target="_blank" class="link">
         <div class="angebot-item">
             <img src="bilder/Vipassana_Karlsruhe.jpg" alt="Gruppe in Karlsruhe">
-            <a href="https://www.vipassana-karlsruhe.info/Willkommen/" target="_blank">Gruppe in Karlsruhe</a>
+            <p>Gruppe in Karlsruhe</p>
         </div>
+        </a>
+
+        <a href="https://www.benediktushof-holzkirchen.de/kursangebot/offene-meditationsangebote/" target="_blank" class="link">
         <div class="angebot-item">
             <img src="bilder/Benediktushof.jpg" alt="Benediktushof">
-            <a href="https://www.benediktushof-holzkirchen.de/kursangebot/offene-meditationsangebote/" target="_blank">Online Meditation und Meditationsgruppen vor Ort</a>
+            <p>Online Meditation und Meditationsgruppen vor Ort</p>
         </div>
+        </a>
+        
+        <a href="https://www.sonnenhof-holzinshaus.de/" target="_blank" class="link">
         <div class="angebot-item">
             <img src="bilder/sonnenhof.jpg" alt="Sonnenhof">
-            <a href="https://www.sonnenhof-holzinshaus.de/" target="_blank">Sonnenhof Holzinshaus</a>
+            <p>Sonnenhof Holzinshaus</p>
         </div>
-        <div class="angebot-item">
-            <img src="bilder/ortenau-klinikum.jpg" alt="Ortenau Klinikum">
-            <a href="https://offenburg-kehl.ortenau-klinikum.de/ueber-uns/foerdervereine/betriebsstelle-offenburg/achtsamkeitsuebung/" target="_blank">Achtsamkeitsübung Ortenau Klinikum</a>
+        </a>
+
+        <a href="https://www.bodhi-vihara.org/events" target="_blank" class="link">
+        <div class="link-item">
+            <img src="bilder/Bodhi-Vihara.jpg" alt="Lehrredenstudium und Kloster auf Zeit">
+            <p>Online Lehrredenstudium oder Kloster auf Zeit</p>
         </div>
+        </a>
         
     </div>
 </main>
-<footer>&copy; 2026 Meditation</footer>
-</body>
+<footer> 
+    <div class="footer-content">
+         <img src="bilder/Lotus_Logo.jpg" alt="Logo" class="logo">
+        <div class="footer-links">
+            <a href="meditationsangebot.html" class="footer-link">[nach oben]</a>
+            <a href="links.html" class="footer-link">[Links &rarr;]</a>
+        </div>
+    </div>
+</footer>
 </html>

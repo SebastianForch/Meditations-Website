@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 
 body {
     font-family:  'Georgia', serif;
@@ -6,6 +10,7 @@ body {
     
     background-color: #f4f1e6; /* sanftes Beige */
     color: #5b4636;
+    overflow-x: hidden;
 
 }
 header {
@@ -17,7 +22,6 @@ header {
     font-size: 1.8rem;
     letter-spacing: 1px;
 }
-
 
 
 .navbar {
@@ -39,24 +43,26 @@ header {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 0 2rem;
-    max-width: 1600px;
+    padding: 0 1rem;
+    max-width: 100%;
 }
 
 .navbar-logo {
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: bold;
     color: #8b5e3c;
     text-decoration: none;
     cursor: pointer;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    transition: all 0.7s ease;
+    padding: 0.3rem 0.8rem; /* Hier: Padding für Platz um den Text */
 }
 
 .navbar-logo:hover {
-    color: #fff8e7;
-    background-color: #8b5e3c;
-    text-decoration: none;
-    font-weight: bold;
-    transition: all 0.3s ease;
+    color: #f4f1e6;
+    background: rgba(193, 154, 107, 0.8);
+    border: 2px solid #8b5e3c;
 }
 
 
@@ -102,17 +108,18 @@ header {
     transition: all 0.3s ease-in-out;
 }
 
-@media (max-width: 880px) {
+@media (max-width: 970px) {
     .navbar {
         backdrop-filter: none;
     }
 
     .navbar-container .navbar-menu {
+        display: none;
         flex-direction: column;
         align-items: flex-start;
         gap: 1.7rem !important;
-        position: absolute;
-        height: 100vh;
+        position: fixed;
+        height: fit-content;
         width: 250px;
         top: 0;
         right: 0;
@@ -121,29 +128,45 @@ header {
         backdrop-filter: blur(10px);
     }
 
+    .navbar-container .navbar-menu.active {
+        display: flex;
+    }
+
     .navbar-toggle {
 
         display: block;
         z-index: 999;
     }
+
+
+    .navbar-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .navbar-toggle.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .navbar-toggle.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
 }
-/*nav {
-    display: flex;
-    justify-content: center;
-    background-color: #c19a6b; 
-    flex-wrap: wrap;
+
+@media (max-width: 480px) {
+    .navbar-container {
+        padding: 0 1rem;
+    }
+
+    .navbar-logo {
+        font-size: 1.7rem;
+    }
+
+    .navbar-container .navbar-menu li a {
+        font-size: 1.2rem;
+        padding: 3px 15px;
+    }
 }
-nav a {
-    color: #fff8e7;
-    text-decoration: none;
-    padding: 1rem 1.5rem;
-    font-weight: bold;
-    transition: background 0.3s ease;
-}
-nav a:hover {
-    background-color: #8b5e3c;
-}
-*/
+    
 
 h2 {
     text-align: center;
@@ -152,7 +175,7 @@ h2 {
 
 /* Hauptbereich mit Pergament-Stil */
 main {
-    max-width: 700px;
+    max-width: 900px;
     margin: 2rem auto;
     padding: 4rem;
     background: #fdf6e3 url('bilder/pergament.jpg') repeat; /* Pergament-Hintergrund */
@@ -231,12 +254,50 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    text-align: center;
     padding: 1rem;
     background-color: #8b5e3c;
     color: #fff8e7;
-    margin-top: 2rem;
     font-size: 0.9rem;
-
+    display: flex; /* Flexbox aktivieren */
+    justify-content: center; 
 }
 
+.footer-content {
+    display: flex;
+    width: 100%;
+    max-width: 1200px; /* Optional: Maximale Breite für bessere Kontrolle */
+    justify-content: space-between; /* Text links, Links rechts */
+    align-items: center;
+    padding: 0 1rem; /* Abstand links/rechts */
+    white-space: nowrap; /* Verhindert Umbruch */
+}
+
+.footer-links {
+    display: flex;
+    gap: 1rem; /* Abstand zwischen den Links */
+    
+}
+
+.footer-link {
+    color: #fff8e7; /* Farbe der Links anpassen */
+    text-decoration: none; /* Unterstreichung entfernen */
+}
+
+.footer-link:hover {
+    color: #8b5e3c;
+    background:#f4f1e6 ;
+}
+/* Für kleine Geräte: Links untereinander */
+@media (max-width: 360px) {
+    .footer-links {
+        flex-direction: column;
+        align-items: flex-end; /* Links rechtsbündig untereinander */
+        gap: 0.5rem;
+    
+    }
+}
+
+.logo {
+    width: auto;
+    height: 50px;
+}
