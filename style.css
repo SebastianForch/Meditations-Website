@@ -288,7 +288,7 @@ footer {
     background:#f4f1e6 ;
 }
 /* Für kleine Geräte: Links untereinander */
-@media (max-width: 360px) {
+@media (max-width: 400px) {
     .footer-links {
         flex-direction: column;
         align-items: flex-end; /* Links rechtsbündig untereinander */
