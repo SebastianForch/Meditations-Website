@@ -257,7 +257,7 @@ footer {
     padding: 1rem;
     background-color: #8b5e3c;
     color: #fff8e7;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     display: flex; /* Flexbox aktivieren */
     justify-content: center; 
 }
@@ -288,7 +288,7 @@ footer {
     background:#f4f1e6 ;
 }
 /* Für kleine Geräte: Links untereinander */
-@media (max-width: 400px) {
+@media (max-width: 470px) {
     .footer-links {
         flex-direction: column;
         align-items: flex-end; /* Links rechtsbündig untereinander */

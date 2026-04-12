@@ -9,7 +9,7 @@ navbarToggle.addEventListener('click', () => {
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/Meditations-Website/sw.js')
+    navigator.serviceWorker.register('sw.js')
       .then(registration => {
         console.log('ServiceWorker registriert:', registration.scope);
       })
