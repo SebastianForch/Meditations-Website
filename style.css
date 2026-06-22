@@ -217,7 +217,8 @@ img {
 }
 .angebot-item img, .link-item img, .einfuehrung-item  img {
     width: 100%;
-    height: auto;
+    height: 300px; /* Feste Höhe für alle Bilder */
+    object-fit: contain; /* Bild wird nicht beschnitten, bleibt vollständig sichtbar */
     border-radius: 6px;
     margin-bottom: 0.5rem;
 }
