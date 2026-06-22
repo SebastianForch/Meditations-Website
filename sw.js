@@ -1,4 +1,4 @@
-const CACHE_NAME = 'meditation-pwa-cache-v11';
+const CACHE_NAME = 'meditation-pwa-cache-v12';
 const urlsToCache = [
   './',
   'index.html',
@@ -11,6 +11,7 @@ const urlsToCache = [
   'bilder/Achtfacher_Pfad.jpg',
   'bilder/Benediktushof.jpg',
   'bilder/Bodhi-Vihara.jpg',
+  'bilder/Dhamma_Dana.jpg',
   'bilder/gegen_den_strich.jpg',
   'bilder/Lotus_Logo.jpg',
   'bilder/lotus-flower.jpg',
