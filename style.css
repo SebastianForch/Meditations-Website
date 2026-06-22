@@ -206,7 +206,7 @@ img {
 
 .angebot-item, .link-item, .einfuehrung-item {
     width: 280px;
-    min-height: 480px;
+    height: 480px;
     text-align: center;
     border: 1px solid #d2b48c;
     border-radius: 8px;
