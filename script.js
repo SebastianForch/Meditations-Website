@@ -21,7 +21,7 @@ if ('serviceWorker' in navigator) {
 
 // Funktion zum Öffnen des Pop-Ups
         function openPopup() {
-            document.getElementById("popup").style.display = "block";
+            document.getElementById("popup").style.display = "flex";
         }
 
         // Funktion zum Schließen des Pop-Ups
@@ -36,3 +36,5 @@ if ('serviceWorker' in navigator) {
                 closePopup();
             }
         }
+
+      
