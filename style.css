@@ -303,7 +303,7 @@ footer {
     height: 50px;
 }
 
-/* Pop-Up-Stil von Mistral: 
+/* Pop-Up-Stil von Mistral:*/
         .popup {
             display: flex;
             justify-content: center;
@@ -334,74 +334,11 @@ footer {
             font-size: 24px;
             cursor: pointer;
         }
-        /* Link-Stil 
+        /* Link-Stil*/
         .popup-link {
             cursor: pointer;
             color: blue;
             text-decoration: underline; 
-        }*/
-
-        .popup {
-            /* Standardmäßig ausgeblendet, wird per JS zu 'flex' */
-            display: none; 
-            
-            /* Aktiviert die perfekte Zentrierung */
-            justify-content: center;
-            align-items: center;
-            
-            /* Vollbild-Abdeckung */
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            background-color: white; /* Weißer Hintergrund, wie von dir gewünscht */
-            z-index: 1000;
-            
-            /* Verhindert Scrollbalken und lässt das Bild bis ganz nach außen wandern */
-            padding: 0; 
-            overflow: hidden;
-            box-sizing: border-box;
-    }
-
-        .popup img {
-            /* Zwingt das Bild, den maximal verfügbaren Platz einzunehmen */
-            width: 100%;
-            height: 100%;
-            
-            /* Das Zauber-Attribut: Vergrößert das Bild maximal, OHNE es zu verzerren */
-            object-fit: contain; 
-            display: block;
         }
-
-        .popup-close {
-            position: absolute;
-            /* Etwas mehr Abstand zum Rand für das große Kreuz */
-            top: 20px;
-            right: 25px;
-            
-            /* Deutlich vergrößert für bessere Bedienbarkeit */
-            font-size: 50px; 
-            line-height: 1; /* Verhindert, dass das Kreuz die Box verschiebt */
-            font-weight: bold;
-            color: #333; /* Gut sichtbar auf weißem Grund */
-            cursor: pointer;
-            user-select: none; /* Verhindert blaues Markieren beim Klicken */
-            
-            /* Kurze Animation beim Drüberfahren */
-            transition: transform 0.2s, color 0.2s;
-        }
-
-        /* Visuelles Feedback beim Drüberfahren (Hover) */
-        .popup-close:hover {
-            transform: scale(1.15);
-            color: #000;
-        }
-
-        /* Link-Stil für dein Vorschaubild */
-        .popup-link {
-            cursor: pointer;
-        }
-
 
         

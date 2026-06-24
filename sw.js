@@ -1,4 +1,4 @@
-const CACHE_NAME = 'meditation-pwa-cache-v20';
+const CACHE_NAME = 'meditation-pwa-cache-v21';
 const urlsToCache = [
   './',
   'index.html',
@@ -38,30 +38,6 @@ self.addEventListener('install', event => {
   );
 });
 
-/*self.addEventListener('fetch', event => {
-  // Ignoriere nicht-HTTP-Anfragen (z. B. Chrome Extensions)
-  if (!event.request.url.startsWith('http')) return;
-
-  event.respondWith(
-    caches.match(event.request)
-      .then(response => {
-        if (response) {
-          return response; // Cache-Hit
-        }
-        // Netzwerk-Anfrage mit Offline-Fallback
-        return fetch(event.request).catch(() => {
-          // Falls es sich um eine HTML-Seite handelt, zeige die Offline-Seite
-          if (event.request.headers.get('accept').includes('text/html')) {
-            return caches.match('offline.html');
-          }
-          // Für andere Dateitypen (z. B. Bilder): Gib einfach nichts zurück
-          // (alternativ: Platzhalter-Bild für Bilder)
-        });
-      })
-  );
-}); alter fetch*/
-
-/* neuer fetch:*/
 
 self.addEventListener('fetch', event => {
   if (!event.request.url.startsWith('http')) return;
@@ -85,7 +61,6 @@ self.addEventListener('fetch', event => {
   );
 }); 
 
-/*bis hier!*/
 
 self.addEventListener('activate', event => {
   const cacheWhitelist = [CACHE_NAME]; // Nur dieser Cache soll bleiben
