@@ -206,7 +206,7 @@ img {
 
 .angebot-item, .link-item, .einfuehrung-item {
     width: 280px;
-    height: 600px;
+    height: 550px;
     text-align: center;
     border: 1px solid #d2b48c;
     border-radius: 8px;
@@ -305,7 +305,9 @@ footer {
 
 /* Pop-Up-Stil */
         .popup {
-            display: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             position: fixed;
             top: 0;
             left: 0;
@@ -320,7 +322,8 @@ footer {
         }
         .popup img {
             max-width: 100%;
-            height: auto;
+            max-height: 100%;
+            object-fit: contain;
         }
         .popup-close {
             position: absolute;
