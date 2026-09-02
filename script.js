@@ -37,13 +37,14 @@ function openPopup(type, source) {
         img.style.objectFit = "contain";
         popupContent.appendChild(img);
     } else if (type === "pdf") {
-        // Erstelle ein iframe-Element für die PDF (besser für Vollbild)
-        const iframe = document.createElement("iframe");
-        iframe.src = source;
-        iframe.style.width = "100%";
-        iframe.style.height = "100%";
-        iframe.style.border = "none"; // Entfernt Rahmen
-        popupContent.appendChild(iframe);
+        // Erstelle ein embed-Element für die PDF
+        const embed = document.createElement("embed");
+        embed.src = source;
+        embed.type = "application/pdf";
+        embed.style.width = "100%";
+        embed.style.height = "100%";
+        embed.style.minHeight = "90vh";
+        popupContent.appendChild(embed);
     }
 
     // Zeige das Popup an
