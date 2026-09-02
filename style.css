@@ -25,7 +25,7 @@ header {
 
 
 .navbar {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     height: 80px;
@@ -48,23 +48,25 @@ header {
 }
 
 .navbar-logo {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #8b5e3c;
+    display: inline-flex;
+    align-items: center;
     text-decoration: none;
     cursor: pointer;
-    border-radius: 30px;
-    border: 2px solid transparent;
-    transition: all 0.7s ease;
-    padding: 0.3rem 0.8rem; /* Hier: Padding für Platz um den Text */
+    padding:0;
+    line-height:0;
 }
 
-.navbar-logo:hover {
-    color: #f4f1e6;
-    background: rgba(193, 154, 107, 0.8);
+.navbar-logo img {
+    width: auto;
+    height: 80px;
+    border: 2px solid transparent;
+    transition: border 0.7s ease;
+    margin-top: 0;
+}
+
+.navbar-logo:hover img {
     border: 2px solid #8b5e3c;
 }
-
 
 .navbar-container .navbar-menu {
     display: flex;
@@ -119,7 +121,7 @@ header {
         align-items: flex-start;
         gap: 1.7rem !important;
         position: fixed;
-        height: fit-content;
+        height: auto;
         width: 250px;
         top: 0;
         right: 0;
@@ -187,6 +189,8 @@ main {
     font-size: 18px;
     line-height: 2.0;
 }
+
+
 img {
     max-width: 100%;
     height: auto;
@@ -234,6 +238,24 @@ img {
     
 }
 
+@media (max-width: 768px) {
+    main {
+        padding: 2rem 1rem;
+    }
+
+    .angebot, .links-container, .einfuehrung {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .angebot-item, .link-item, .einfuehrung-item {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 1rem;
+    }
+}
+
 .link {
    text-decoration: none;
     color: inherit;
@@ -256,51 +278,84 @@ footer {
     bottom: 0;
     width: 100%;
     padding: 1rem;
-    background-color: #8b5e3c;
+    background-color: transparent; /* Transparenter Hintergrund */
     color: #fff8e7;
     font-size: 1.2rem;
-    display: flex; /* Flexbox aktivieren */
-    justify-content: center; 
+    display: flex;
+    justify-content: center;
+    height: 70px; /* Höhe des Footers (angepasst an deine ursprüngliche Höhe) */
+    align-items: center;
 }
 
 .footer-content {
     display: flex;
     width: 100%;
-    max-width: 1200px; /* Optional: Maximale Breite für bessere Kontrolle */
-    justify-content: space-between; /* Text links, Links rechts */
+    max-width: 900px;
+    justify-content: space-between;
     align-items: center;
-    padding: 0 1rem; /* Abstand links/rechts */
-    white-space: nowrap; /* Verhindert Umbruch */
+    position: relative;
+    padding: 0;
+    white-space: nowrap;
 }
 
 .footer-links {
     display: flex;
-    gap: 1rem; /* Abstand zwischen den Links */
-    
+    gap: 1rem;
 }
 
 .footer-link {
-    color: #fff8e7; /* Farbe der Links anpassen */
-    text-decoration: none; /* Unterstreichung entfernen */
+    color: #fff8e7;
+    text-decoration: none;
 }
 
 .footer-link:hover {
     color: #8b5e3c;
-    background:#f4f1e6 ;
+    background: #f4f1e6;
 }
-/* Für kleine Geräte: Links untereinander */
+
+/* Pfeile */
+.arrow {
+    font-size: 2rem; /* Größe der Pfeile */
+    color: #8b5e3c; /* Braun wie der ursprüngliche Footer */
+    font-weight: bold;
+}
+
+/* Positionierung der Pfeile */
+.left-arrow {
+    position: absolute;
+    left: 1rem;
+}
+
+.right-arrow {
+    position: absolute;
+    right: 4rem; /* Abstand zum rechten Rand (damit Platz für den nach oben Pfeil bleibt) */
+}
+
+.up-arrow {
+    position: absolute;
+    right: 1rem;
+}
+
+/* Für kleine Geräte */
 @media (max-width: 470px) {
     .footer-links {
         flex-direction: column;
-        align-items: flex-end; /* Links rechtsbündig untereinander */
+        align-items: flex-end;
         gap: 0.5rem;
-    
     }
-}
 
-.logo {
-    width: auto;
-    height: 50px;
+    /* Anpassung der Pfeile für kleine Bildschirme */
+    .left-arrow {
+        left: 0.5rem;
+    }
+
+    .right-arrow {
+        right: 3rem;
+    }
+
+    .up-arrow {
+        right: 0.5rem;
+    }
 }
 
 /* Pop-Up-Stil von Mistral:*/

@@ -15,7 +15,9 @@
 <nav class="navbar">
     <div class="navbar-container">
         
-       <a href="index.html" class="navbar-logo">Meditation</a>
+       <a href="index.html" class="navbar-logo">
+        <img src="bilder/Lotus_Logo.jpg" alt="Meditation Logo">
+    </a>
 
         <button class="navbar-toggle">
             <span class="bar"></span>
@@ -23,6 +25,7 @@
             <span class="bar"></span>
         </button>
         <ul class="navbar-menu">
+            <li><a href="index.html">Home</a> </li>
             <li><a href="anleitung.html">Meditation im Alltag</a></li>
             <li><a href="meditationsangebot.html">Meditationsangebote</a></li>
             <li><a href="vertiefung.html">Vertiefung</a></li>
@@ -68,13 +71,26 @@
         
     </div>
 </main>
-<footer> 
+
+<footer>
     <div class="footer-content">
-         <img src="bilder/Lotus_Logo.jpg" alt="Logo" class="logo">
-        <div class="footer-links">
-            <a href="meditationsangebot.html" class="footer-link">[nach oben]</a>
-            <a href="vertiefung.html" class="footer-link">[Vertiefung &rarr;]</a>
-        </div>
+        <a href="anleitung.html" class="arrow left-arrow">
+            <svg viewBox="0 0 24 24" width="40" height="40">
+                <path d="M15 18L9 12L15 6" stroke="#8b5e3c" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+        <a href="vertiefung.html" class="arrow right-arrow">
+            <svg viewBox="0 0 24 24" width="40" height="40">
+                <path d="M9 18L15 12L9 6" stroke="#8b5e3c" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+        <a href="meditationsangebot.html" class="arrow up-arrow">
+            <svg viewBox="0 0 24 24" width="40" height="40">
+                <path d="M12 18V6M12 6L18 12M12 6L6 12" stroke="#8b5e3c" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
     </div>
 </footer>
+
+</body>
 </html>
