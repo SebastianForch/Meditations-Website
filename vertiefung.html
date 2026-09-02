@@ -69,34 +69,40 @@
         </div>
         </a>
 
-        <a href="downloads/weg-zum-selbst-zen-wirklichkeit-von-uchiyama-roshi.pdf" target="_blank" class="link">
+        <a class="popup-link" onclick="openPopup('pdf', 'downloads/weg-zum-selbst-zen-wirklichkeit-von-uchiyama-roshi.pdf')">
         <div class="einfuehrung-item">
         <img src="bilder/Uchiyama.jpg" alt="Uchiyama">
         <p>Uchiyama erklärt den Sinn der Meditation und wie man sie im Alltag anwendet</p>
         </div>
         </a>
 
-        <a href="downloads/gegen_den_strich.pdf" target="_blank" class="link">
+        <a class="popup-link" onclick="openPopup('pdf', 'downloads/gegen_den_strich.pdf')">
         <div class="einfuehrung-item">
         <img src="bilder/gegen_den_strich.jpg" alt="Mettiko">
         <p>Wichtige buddhistische Konzepte alltagstauglich übersetzt und erklärt</p>
         </div>
         </a>
 
-        <a href="downloads/voll_liebe_zu_der_ganzen_welt.pdf" target="_blank" class="link">
+        <a class="popup-link" onclick="openPopup('pdf', 'downloads/voll_liebe_zu_der_ganzen_welt.pdf')">
         <div class="einfuehrung-item">
         <img src="bilder/Brahmavihara.jpg" alt="Brahmavihara">
         <p>Eine alltagstaugliche Erklärung, wie man der Welt mit Mitgefühl begegnen kann</p>
         </div>
         </a>
 
-        <a href="downloads/gesammelten-lehren-2021-01-21.pdf" target="_blank" class="link">
+        <a class="popup-link" onclick="openPopup('pdf', 'downloads/gesammelten-lehren-2021-01-21.pdf')">
         <div class="einfuehrung-item">
         <img src="bilder/Chah.jpg" alt="Ajahn Chah">
         <p>Ajahn Chah beleuchtet viele Aspekte des Weges</p>
         </div>
         </a>
 
+
+    <!-- Pop-Up-Fenster (dynamisch für Bild oder PDF) -->
+<div id="popup" class="popup" style="display: none;">
+    <span class="popup-close" onclick="closePopup()">&times;</span>
+    <div id="popup-content"></div>
+</div>
 
 </main>
 <footer> 

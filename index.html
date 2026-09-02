@@ -46,15 +46,15 @@
 
     <h2 class="weniger-abstand">Mögliche Sitzpositionen</h2>
  
-    <a class="popup-link" onclick="openPopup()">
-        <img src="bilder/Meditation-Positionen.png" alt="Meditationspositionen" style="width: 400px; height: auto; display: block; margin: 0 auto;">
+    <a class="popup-link" onclick="openPopup('image', 'bilder/Meditation-Positionen.png')">
+    <img src="bilder/Meditation-Positionen.png" alt="Meditationspositionen" style="width: 400px; height: auto; display: block; margin: 0 auto;">
     </a>
 
-    <!-- Pop-Up-Fenster -->
-    <div id="popup" class="popup" style="display: none;">
-        <span class="popup-close" onclick="closePopup()">&times;</span>
-        <img src="bilder/Meditation-Positionen.png" alt="Meditationspositionen">
-    </div>
+    <!-- Pop-Up-Fenster (dynamisch für Bild oder PDF) -->
+<div id="popup" class="popup" style="display: none;">
+    <span class="popup-close" onclick="closePopup()">&times;</span>
+    <div id="popup-content"></div>
+</div>
 
 
     
