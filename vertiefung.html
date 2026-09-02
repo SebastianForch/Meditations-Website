@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertiefung</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+<header>
+    
+</header>
+<nav class="navbar">
+    <div class="navbar-container">
+        
+       <a href="index.html" class="navbar-logo">Meditation</a>
+
+        <button class="navbar-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <ul class="navbar-menu">
+            <li><a href="anleitung.html">Meditation im Alltag</a></li>
+            <li><a href="meditationsangebot.html">Meditationsangebote</a></li>
+            <li><a href="vertiefung.html">Vertiefung</a></li>
+        </ul>
+    </div>
+</nav>
+<script src="script.js"></script>
+
+<main>
+    <h2>Vertiefung</h2>
+
+    <p>Hier findest du eine Liste von Inhalten, die mich auf meinem meditativen Weg inspiriert haben.
+        Der meditative Weg ist allerdings ein sehr individueller Weg. Suche dir also die Quellen, die dich inspirieren.
+        Wenn du hier etwas findest - gut. Wenn nicht, gibt es noch eine Menge andere Quellen zu entdecken.
+    </p>
+    <div class="links-container">
+        
+        
+        <a href="https://youtube.com/@muho?si=j88lbQMZhdbV-ZZU" target="_blank" class="link">
+        <div class="link-item">
+            <img src="bilder/youtube-muho.jpg" alt="YouTube Muho">
+            <p>YouTube-Kanal von Muho (Fragen zur Meditation und zum Leben)</p>
+        </div>
+        </a>
+        
+        <a href="https://www.youtube.com/@ImHerzenDesDhamma" target="_blank" class="link">
+        <div class="link-item">
+            <img src="bilder/Nonnenkloster.jpg" alt="Dhamma auf Youtube">
+            <p>Vorträge zu verschiedenen buddhistischen Themen</p>
+        </div>
+        </a>
+
+        <a href="https://youtube.com/@hardcorezen?si=ZrCskPb0IDdsD07x" target="_blank" class="link">
+        <div class="link-item">
+            <img src="bilder/Brad.jpg" alt="Muttodaya">
+            <p>Ein etwas anderer Blick auf Meditation (englisch)</p>
+        </div>
+        </a>
+
+        <a href="https://youtube.com/playlist?list=PLomY-Sp4p5YsIVG0DmvJhUcR6YaXR_3wf&si=zhoJu_73bJiuSmFS" target="_blank" class="link">
+        <div class="link-item">
+            <img src="bilder/clear_mountain.jpg" alt="Muttodaya">
+            <p>Zwei Theravada Mönche besprechen die wichtigsten buddhistischen Lehrreden (englisch)</p>
+        </div>
+        </a>
+
+        <a class="popup-link" onclick="openPopup('pdf', 'downloads/weg-zum-selbst-zen-wirklichkeit-von-uchiyama-roshi.pdf')">
+        <div class="einfuehrung-item">
+        <img src="bilder/Uchiyama.jpg" alt="Uchiyama">
+        <p>Uchiyama erklärt den Sinn der Meditation und wie man sie im Alltag anwendet</p>
+        </div>
+        </a>
+
+        <a class="popup-link" onclick="openPopup('pdf', 'downloads/gegen_den_strich.pdf')">
+        <div class="einfuehrung-item">
+        <img src="bilder/gegen_den_strich.jpg" alt="Mettiko">
+        <p>Wichtige buddhistische Konzepte alltagstauglich übersetzt und erklärt</p>
+        </div>
+        </a>
+
+        <a class="popup-link" onclick="openPopup('pdf', 'downloads/voll_liebe_zu_der_ganzen_welt.pdf')">
+        <div class="einfuehrung-item">
+        <img src="bilder/Brahmavihara.jpg" alt="Brahmavihara">
+        <p>Eine alltagstaugliche Erklärung, wie man der Welt mit Mitgefühl begegnen kann</p>
+        </div>
+        </a>
+
+        <a class="popup-link" onclick="openPopup('pdf', 'downloads/gesammelten-lehren-2021-01-21.pdf')">
+        <div class="einfuehrung-item">
+        <img src="bilder/Chah.jpg" alt="Ajahn Chah">
+        <p>Ajahn Chah beleuchtet viele Aspekte des Weges</p>
+        </div>
+        </a>
+
+
+    <!-- Pop-Up-Fenster (dynamisch für Bild oder PDF) -->
+<div id="popup" class="popup" style="display: none;">
+    <span class="popup-close" onclick="closePopup()">&times;</span>
+    <div id="popup-content"></div>
+</div>
+
+</main>
+<footer> 
+    <div class="footer-content">
+         <img src="bilder/Lotus_Logo.jpg" alt="Logo" class="logo">
+        <div class="footer-links">
+            <a href="vertiefung.html" class="footer-link">[nach oben]</a>
+            
+        </div>
+    </div>
+</footer>
+</body>
+</html>
