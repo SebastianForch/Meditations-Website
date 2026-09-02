@@ -1,4 +1,4 @@
-const CACHE_NAME = 'meditation-pwa-cache-v29';
+const CACHE_NAME = 'meditation-pwa-cache-v30';
 const urlsToCache = [
   './',
   'index.html',
@@ -23,10 +23,10 @@ const urlsToCache = [
   'bilder/Uchiyama.jpg',
   'bilder/Vipassana_Karlsruhe.jpg',
   'bilder/youtube-muho.jpg',
-  'downloads/gegen_den_strich.pdf',
-  'downloads/gesammelten-lehren-2021-01-21.pdf',
-  'downloads/voll_liebe_zu_der_ganzen_welt.pdf',
-  'downloads/weg-zum-selbst-zen-wirklichkeit-von-uchiyama-roshi.pdf',
+  //'downloads/gegen_den_strich.pdf',
+  //'downloads/gesammelten-lehren-2021-01-21.pdf',
+  //'downloads/voll_liebe_zu_der_ganzen_welt.pdf',
+  //'downloads/weg-zum-selbst-zen-wirklichkeit-von-uchiyama-roshi.pdf',
   'offline.html',
   // Füge hier alle wichtigen Dateien hinzu
 ];
