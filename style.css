@@ -341,22 +341,5 @@ footer {
             text-decoration: none; 
         }
 
-        /* PDF-spezifische Anpassung */
-        #popup-content {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        /* PDF-Embed/Iframe füllt das Popup aus */
-        #popup-content iframe,
-        #popup-content embed {
-            width: 100%;
-            height: 100%;
-            min-height: 90vh; /* Mindesthöhe für bessere Darstellung */
-            border: none; /* Entfernt Rahmen bei iframe/embed */
-        }
-
+       
         

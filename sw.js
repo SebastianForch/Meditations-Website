@@ -1,4 +1,4 @@
-const CACHE_NAME = 'meditation-pwa-cache-v27';
+const CACHE_NAME = 'meditation-pwa-cache-v29';
 const urlsToCache = [
   './',
   'index.html',
