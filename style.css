@@ -328,12 +328,22 @@ footer {
             display: block;
         }
         .popup-close {
-            position: absolute;
+            position: fixed; /* Statt absolute, damit es immer an der Ecke bleibt */
             top: 10px;
             right: 10px;
-            font-size: 24px;
+            font-size: 36px; /* Größere Schrift (z. B. 36px statt 24px) */
             cursor: pointer;
-        }
+            color: #333; /* Optional: Farbe anpassen */
+            background: rgba(255, 255, 255, 0.8); /* Optional: Hintergrund für bessere Sichtbarkeit */
+            border-radius: 50%; /* Optional: Rundes Design */
+            width: 40px; /* Optional: Festes Quadrat für bessere Klickfläche */
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1001; /* Muss höher als .popup (z-index: 1000) sein */
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Optional: Leichter Schatten */
+}
         /* Link-Stil*/
         .popup-link {
             cursor: pointer;
